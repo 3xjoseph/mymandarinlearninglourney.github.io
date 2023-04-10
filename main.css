@@ -152,7 +152,7 @@ h1 {
 
 p {
   display: block;
-  width: 90%;
+  width: 100%;
   font-size: 1.2em;
   color: #245953;
 }
@@ -281,12 +281,13 @@ button:hover {
 }
 
 .act-container {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin: auto;
+  display: block; 
   flex-wrap: wrap;
 }
 
-.act-container .activities { 
+.act-container .conact { 
   transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -webkit-transform: scale(0.5, 0.5);
@@ -317,10 +318,10 @@ button:hover {
 }
 
 .descr { 
-  font-size: 16px;
+  font-size: 24px;
   color: #245953;
   justify-content: center;
-  padding: 200px;
+  padding: 30px;
   text-align: center;
   letter-spacing: .2rem;
 }
@@ -340,16 +341,26 @@ button:hover {
   padding-bottom: 5%;
 }
 
-.getKnow p{
-  padding-left: 10%;
-}
-
 .links-getKnow {
   display: block;
+  text-align: center;
 }
 
 .links-getKnow a{ 
   font-size: 20px;
   color: #245953;
   margin: 25px 10px;
+}
+
+.conact {
+  width: 50%;
+  height: 20%;
+  border-width:2px;
+  border-style:outset;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 50px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
 }
